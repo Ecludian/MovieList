@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FF9030"
+    android:padding="@dimen/_5sdp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:contentDescription="@string/backdropImage"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="453dp"
+        android:background="#B65211"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/txt_Title"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtVoteLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:gravity="start"
+                android:text="@string/voteLine"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/txtVote"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:gravity="end"
+                android:text="@string/edit_message"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtReleaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:gravity="start"
+                android:text="@string/txtReleaseDate"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/releaseDate"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:gravity="end"
+                android:text="@string/releaseDate"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtOverview"
+            android:layout_width="match_parent"
+            android:layout_height="217dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/txt_Overview"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_10ssp" />
+    </LinearLayout>
+
+</LinearLayout>

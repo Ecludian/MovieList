@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name" translatable="false">WoS Movies</string>
+    <string name="buttonSend">Show Movies</string>
+    <string name="ShowMovies">ShowMovies</string>
+    <string name="edit_message">Place Holder</string>
+    <string name="list_movies">MovieList</string>
+    <string name="txt_Title">Movie Title</string>
+    <string name="txt_Vote">Vote</string>
+    <string name="txt_Overview">Click for More Detail</string>
+    <string name="voteLine">Rating :</string>
+    <string name="txtReleaseDate">"Release Date : "</string>
+    <string name="releaseDate">releaseDate</string>
+    <string name="backdropImage">TODO</string>
+    <string name="about">About</string>
+</resources>
