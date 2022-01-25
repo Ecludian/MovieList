@@ -10,10 +10,13 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
+    DatabaseHelper db;
+    Button logout;
 
     private Button alertButton;
     private TextView alertTextView;
@@ -24,6 +27,29 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
+
+        db = new DatabaseHelper(this);
+
+        logout = (Button)findViewById(R.id.btnLogout);
+        Boolean checkSession = db.checkSession("Exist");
+        if(checkSession =false){
+            Intent loginIntent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(loginIntent);
+            finish();
+        }
+
+        logout.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Boolean updtSession = db.updgradeSession("Empty", 1);
+                if(updtSession == true){
+                    Toast.makeText(getApplicationContext(), "Logout Successful", Toast.LENGTH_SHORT).show();
+                    Intent loginIntent = new Intent(MainActivity.this, LoginActivity.class);
+                    startActivity(loginIntent);
+                    finish();
+                }
+            }
+        });
 
         alertButton = (Button) findViewById(R.id.AllertButton);
         alertTextView = (TextView) findViewById(R.id.AlertTextView);

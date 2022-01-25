@@ -12,4 +12,7 @@
     <string name="releaseDate">releaseDate</string>
     <string name="backdropImage">TODO</string>
     <string name="about">About</string>
+    <string name="Logout">Logout</string>
+    <string name="Login">Login</string>
+    <string name="Register">register</string>
 </resources>
